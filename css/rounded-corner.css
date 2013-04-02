@@ -1,0 +1,147 @@
+.rounded-corner {
+	margin-top:10px;
+}
+
+.pane-content {
+	
+}
+
+.rounded-corner .rounded-header {
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom-width:1px;
+    border-bottom-style:dashed;
+    border-bottom-color:#DDDDDD;
+    padding-bottom:8px;
+    margin-bottom:8px;
+	color:green;
+}
+
+.rounded-corner .wrap-corner {
+    -moz-background-clip:border !important;
+    -moz-background-inline-policy:continuous !important;
+    -moz-background-origin:padding !important;
+    
+	background:#FFFFFF none repeat scroll 0 0 !important;
+    /*background: url("bongo_headbg.gif") repeat-x scroll center top transparent;*/
+	
+}
+
+.t-edge, .b-edge, .l-edge, .r-edge, .wrap-corner {
+    position:relative;
+}
+
+.rounded-corner .wrap-corner .t-edge, .rounded-corner .wrap-corner .b-edge {
+    height:11px;
+}
+
+.rounded-corner .t-edge {
+    -moz-background-clip:border;
+    -moz-background-inline-policy:continuous;
+    -moz-background-origin:padding;
+    background:transparent url("../img/rounded_div/shadow-t.png") repeat-x scroll 0 top;
+    font-size:1px;
+}
+
+.rounded-corner .wrap-corner .l {
+    left:0;
+}
+
+.rounded-corner .wrap-corner .l, .rounded-corner .wrap-corner .r {
+    background-image:url("../img/rounded_div/corner-bits.png");
+    height:11px;
+    position:absolute;
+    top:0;
+    width:11px;
+}
+
+.rounded-corner .wrap-corner .r {
+    background-position:-11px 0;
+    right:0;
+}
+
+.rounded-corner .wrap-corner .l, .rounded-corner .wrap-corner .r {
+    background-image:url("../img/rounded_div/corner-bits.png");
+    height:11px;
+    position:absolute;
+    top:0;
+    width:11px;
+}
+
+.rounded-corner .l-edge {
+    -moz-background-clip:border;
+    -moz-background-inline-policy:continuous;
+    -moz-background-origin:padding;
+    background:transparent url("../img/rounded_div/shadow-l.png") repeat-y scroll 0 0;
+}
+
+.rounded-corner .wrap-corner .r-edge {
+    padding:0px 15px;
+}
+
+.rounded-corner .r-edge {
+    -moz-background-clip:border;
+    -moz-background-inline-policy:continuous;
+    -moz-background-origin:padding;
+    background:transparent url("../img/rounded_div/shadow-r.png") repeat-y scroll right 0;
+}
+
+.clear-block {
+    clear:both;
+    display:block;
+}
+
+.rounded-corner .b-edge {
+    -moz-background-clip:border;
+    -moz-background-inline-policy:continuous;
+    -moz-background-origin:padding;
+    background:transparent url("../img/rounded_div/shadow-b.png") repeat-x scroll 0 bottom;
+    font-size:1px;
+}
+
+.rounded-corner .wrap-corner .b-edge .l {
+    background-position:0 -11px;
+}
+
+.rounded-corner .wrap-corner .b-edge .r {
+    background-position:-11px -11px;
+}
+
+
+
+
+
+
+
+/* above CSS codes use images. NOT USED ANYMORE! */
+
+.rounded {
+	/*background:#F5F6F7;*/
+	
+	background:#FFFFFF;
+	/*background:#192024;*/
+	/*background:#F4FAF6;*/
+	/*background:#9E9E9E;*/
+	/*background:#FBFBFB;*/
+	/*background:#E7F1FD;*/
+	
+	/*background: url("../img/footer-gradient.png") repeat-x scroll center top transparent;*/
+	padding:10px;
+	margin-top:10px;
+}
+
+.rounded-header {
+    font-size: 18px;
+    /*font-weight: 500;*/
+	font-weight: bold;
+	
+    border-bottom-width:1px;
+    border-bottom-style:dashed;
+    border-bottom-color:#DDDDDD;
+    padding-bottom:8px;
+    margin-bottom:8px;
+	
+	/*color:#ff6501;*/
+	color:green;
+	/*#003366; #333333 */
+}

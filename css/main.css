@@ -1,0 +1,444 @@
+/* @author  Mark Edward Tan - July 27, 2011 */
+
+/* dark colored theme = orange, blue + gray = 1st version */
+
+/* Theme changed to light blue and light green. */
+
+/* START CSS Reset */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img,
+q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer,
+header, hgroup, nav, section {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+/* END CSS Reset */
+
+a:link { text-decoration:none; color:#1E598E; }
+a:visited { text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+a.link-rounded-button {
+    display: inline-block;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border: 1px solid #828282;
+    color: #000;
+    text-decoration: none;
+    width:450px;
+    padding:5px 10px;
+    margin-bottom:15px;
+    text-align:center;
+
+    background:url("../img/body_bg.png") repeat-x scroll 0 0 transparent;
+}
+
+a.link-rounded-button:hover {
+    color: yellow;
+    background:url("../img/bg-btn-blue.png") repeat-x scroll 0 0 #3399DD;
+}
+
+
+body {
+    font: 13px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    /*color: #B5B5B5; #636363, #474747;  */
+    
+    color: #636363;
+    
+    background-image: url("../img/bg_gamezmentor.gif");
+    
+    
+}
+
+#page {
+    /*border: 1px solid #446FDD;*/
+    /*
+    border: 1px solid #10B0F0;
+    width: 950px;
+    */
+    /* START Code Stick footer at bottom of page */
+    /*min-height:100%;*/
+    /* END Code Stick footer at bottom of page */
+
+
+    position:relative;
+    /*width:750px;*/
+    height:auto !important;
+    height:100%;
+    min-height:100%;
+    margin:0px auto -30px;
+    /*    margin:0px 0px -30px;*/
+    /*background:#c4c0b8;*/
+
+    border: 1px solid #10B0F0;
+    width: 950px;
+}
+
+#main {
+    padding:0px 10px 10px 10px;
+    background-color:#E7F1FD;
+    height:100%;
+    
+
+    /* START Code Sticky footer at bottom of page */
+    /*overflow:auto;*/
+    
+    /* must be same height as the footer - for sticky footer */
+    /* padding-bottom:150px; */
+    /*padding-bottom:350px;*/
+    
+    /* END Code Sticky footer at bottom of page */
+}
+
+#header {
+
+    /*
+    background-color:#FFFFFF !important;
+    margin:0 auto;
+    width:950px;
+    */
+
+    width:950px;
+    /*height:160px;*/
+    /*margin:0px auto;*/
+    margin:0px;
+    /*background:#918d86;*/
+    float:left;
+
+    background-color:#FFFFFF !important;
+}
+
+#top_header {
+    /*background:url("../img/header_top_bg.jpg") repeat-x 0 0 transparent;*/
+    border:1px solid red;
+    height:35px;
+    color:white;
+    
+}
+
+#top_header_container {
+    width:950px;
+    margin:0 auto;
+    padding-top:2px;
+}
+
+#top_header_container a {
+    color:white;
+    
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight:normal;
+}
+
+#top_header_container a:hover {
+    color:#94B7DB;
+    text-decoration:none;
+}
+
+#header_wrapper {
+    margin:10px 0 10px 0;
+}
+
+/* START Stick Footer at bottom of page */
+html, body {
+    /*height: 100%;*/
+
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+div#minheight {
+    /* The margin and height below must be the same in #footer */
+    /*margin:10px 0px 0px 0px;*/
+
+    height:100px;
+    clear:both;
+}
+
+#footer {
+    /*position: relative;*/
+    background:white;
+    
+    line-height: 1.5em;
+    /*padding:10px;*/
+    /*padding:10px 0px 10px 0px;*/
+
+    color:black;
+    border:1px solid red;
+
+    position:absolute;
+    bottom:0px !important;
+    width:950px;
+    height:100px;
+
+    margin:0px auto;
+    /*margin:0px;*/
+    /*margin:10px 0px 0px 0px;*/
+
+    text-align:center;
+    /*color:#dad6ce;*/
+    /*background:#918d86;*/
+
+}
+
+/* Opera Fix for stick footer at bottom of page */
+body:before {
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;
+}
+/* END Stick Footer at bottom of page */
+
+
+.footer-left {
+    float:left;
+    padding:5px;
+    text-align: left;
+}
+.footer-right {
+    float:right;
+    padding:5px;
+    text-align: right;
+}
+
+
+#footer_nav .footer_nav_list {
+    float: left;
+    font-weight: bold;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.xoxo li a {
+    color:#B0E7F7;
+}
+
+#footer-body {
+    margin: 0 auto;
+
+    width: 950px;   
+}
+
+#footer-about {
+    float:left;
+    width:490px;
+    /*border:1px solid blue;*/
+}
+
+#footer-about h1, #footer-nav h1 {
+    /*text-shadow: 1px 1px white;*/
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom:5px;
+    /*color:#FDFDFD;*/
+    color:black;
+}
+
+#footer-nav {
+    float:right;
+    width:450px;
+    /*border:1px solid green;*/
+}
+
+#footer-nav .footer_nav_list {
+    float: left;
+    font-weight: bold;
+    margin-left: 10px;
+    width: 100px;
+    display:block;
+}
+
+
+#footer-nav .footer_nav_list ul li {
+    font-size: 0.95em;
+    line-height: 1.6em;
+    list-style-type: none;
+}
+
+
+#copyright span {
+    /*color:#FDFDFD;*/
+    color:black;
+}
+
+
+/* START - Services, Packages, Tours styles */
+
+.ul-header-int, .ul-header-loc {
+    font-weight:bold;
+    font-size:16px;
+    margin-top:10px;
+    color:#000000;
+}
+
+.ul-services {
+    
+}
+
+.ul-services li {
+    list-style:none;
+    margin-left:20px;
+}
+
+.services-height {
+    height:400px;
+}
+
+.services-left {
+    width:270px;
+    float:left;
+}
+
+.services-mid-right-container {
+    width:630px;
+    float:right;
+}
+
+.services-mid {
+    width:290px;
+    float:left;
+}
+
+.services-right {
+    width:290px;
+    float:right;
+}
+
+
+/* END - Services, Packages, Tours styles */
+
+
+
+
+.logo {
+    position:relative;
+    top:0px;
+    left:0px;
+}
+.logo-text {
+    position:relative;
+    top:15px;
+    left:-140px;
+}
+
+.home-left {
+    float:left;
+    padding:5px;
+    text-align: left;
+}
+.home-right {
+    float:left;
+    padding:10px 5px 5px 20px;
+    font-size:16px;
+    margin:10px auto;
+    width:450px;
+}
+
+.home-right input[type="text"], .home-right input[type="password"] {
+    -moz-border-radius:4px 4px 4px 4px;
+    border:1px solid #AACCEE;
+    display:block;
+    font-size:13px;
+    margin:0 0 5px;
+    padding:5px;
+    width:203px;
+}
+
+#signin_submit {
+    -moz-border-radius:4px 4px 4px 4px;
+    background:url("../img/bg-btn-blue.png") repeat-x scroll 0 0 #3399DD;
+    border:1px solid #3399DD;
+    color:#FFFFFF;
+    font-size:18px;
+    font-weight:bold;
+    margin:0 5px 0 0;
+    padding:4px 10px 5px;
+    text-shadow:0 -1px 0 #3399DD;
+    width:215px;
+}
+
+.error-msg {
+    font-size: 14px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.menu {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.menu-left {
+    float:right;
+    padding:5px;
+}
+.menu-right {
+    float:right;
+    padding:5px;
+}
+
+.test-left {
+    float:left;
+    padding:5px;
+    text-align: left;
+}
+.test-right {
+    float:left;
+    padding: 25px 0 0 20px;
+    font-size:16px;
+    margin-left:30px;
+}
+
+.clr { clear:both }
+
+/* START - FAQ Styles */
+
+h2.faq {
+    color: #565656;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 4px 0;
+    text-transform: uppercase;
+}
+
+#basebody p {
+    color: #646464;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* END - FAQ Styles */
+
+
+
+/* sample border only for testing */
+.add-border {
+    border:1px solid red;
+}
+
+#top_menu {
+    background: url('../img/menu/menu_bg.gif') repeat-x scroll left top transparent;
+    background-color:#FFFFFF;
+}
+
+
+#top_body {
+    background: #E7F1FD url("../img/top_bg_gradient_3.png") repeat-x;
+}

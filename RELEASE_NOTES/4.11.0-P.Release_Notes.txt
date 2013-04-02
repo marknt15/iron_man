@@ -1,0 +1,79 @@
+*******************************
+* Product Release Information *
+*******************************
+ 
+Product: www.partstrain.com
+Release Number: 4.11.0
+Release Date: 08/19/2011
+
+
+****************
+* Introduction *
+****************
+
+This document contains the release notes for www.partstrain.com 
+version 4.11.0. The following sections describe the release in detail and provide 
+late-breaking or other information that supplements the main documentation.
+
+
+****************
+* Installation *
+****************
+
+- On DPPTFE01 and DPPTFE02:
+
+# Export Site
+svn export https://svn.usautoparts.com/repos/partstrain.com/site/tags/4.11.0 /var/www/html/sites/partstrain.com_4.11.0
+
+# Export MY ACCOUNT CLIENT
+svn export https://svn.usautoparts.com/repos/usap_services/services/myaccount_client/tags/2.2.0 /var/www/html/sites/myaccount_client_v4_2.2.0
+
+# Export SEO EXT
+svn export https://svn.usautoparts.com/repos/seodevelopment/seo_extension_project/ext.partstrain.com/tags/1.5.9 /var/www/html/sites/ext.partstrain.com_1.5.9
+
+
+# Update Symbolic Links
+cd /var/www/html/sites/; unlink partstrain.com; ln -s partstrain.com_4.11.0 partstrain.com;
+cd /var/www/html/sites/; unlink myaccount_client_v4; ln -s myaccount_client_v4_2.2.0 myaccount_client_v4
+cd /var/www/html/sites/; unlink ext.partstrain.com; ln -s ext.partstrain.com_1.5.9 ext.partstrain.com
+
+
+# Reload Apache
+/etc/init.d/httpd reload
+
+# Purge Page Cache
+# /aopi/cache/partstrain.com/page_cache
+
+
+****************
+* Rollback     *
+****************
+
+- On DPPTFE01 and DPPTFE02:
+
+# update symbolic links
+
+cd /var/www/html/sites/; unlink partstrain.com; ln -s partstrain.com_4.10.1 partstrain.com;
+cd /var/www/html/sites/; unlink myaccount_client_v4; ln -s myaccount_client_v4_2.1.0 myaccount_client_v4
+cd /var/www/html/sites/; unlink ext.partstrain.com; ln -s ext.partstrain.com_1.5.6 ext.partstrain.com
+
+rm -rf /var/www/html/sites/partstrain.com_4.11.0
+rm -rf /var/www/html/sites/myaccount_client_v4_2.2.0
+rm -rf /var/www/html/sites/ext.partstrain.com_1.5.9
+
+# Reload Apache
+/etc/init.d/httpd reload
+
+# Purge Page Cache
+# /aopi/cache/partstrain.com/page_cache
+
+
+******************
+* Recent Changes *
+******************
+
+- 438 [My Account] User able to create create account using email address of a existing account
+- 445 Bongo checkout
+- 484 Scene 7 implementation for SEO Pages
+- 496 Exit Survey Isssue
+- 524 [Receipt] Intermittent bizrate and RR pop-up display
