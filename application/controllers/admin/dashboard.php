@@ -27,8 +27,8 @@ class Dashboard extends CI_Controller {
 		// this will make $data variables available to all views even with sub views - elements/partials
 		$this->load->vars($data);
         
-        echo SITE_NAME . " test here echo admin dashboard controller";
-
+        //echo SITE_NAME . " test here echo admin dashboard controller";
+        
         $this->layout->view('admin/admin_view_file');
     }
 }

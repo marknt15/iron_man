@@ -10,13 +10,11 @@
 </head>
 
 <body>
-ADMIN LAYOUT HERE!
-<hr />
 
 <div id="page">
-
+    
     <div id="top_header" style="background:white;">
-        <div style="width:950px;margin:0 auto;">
+        <div style="width:950px;margin:0 auto;color:black;">
             HEADER here
         </div>
     </div>
@@ -25,7 +23,7 @@ ADMIN LAYOUT HERE!
     <div id="top_body">
         <div id="page" style="width:950px;margin:0 auto;">
 
-            <div id="main">
+            <div id="main" style="height:450px;">
                 <?php echo $content_for_layout?>
             </div>
         </div>

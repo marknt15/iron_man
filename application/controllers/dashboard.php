@@ -19,10 +19,9 @@ class Dashboard extends CI_Controller {
 	function index()
 	{
         //$this->load->vars($data);
-        
         echo SITE_NAME . " test here echo CLIENT's dashboard controller";
-
-        $this->layout->view('admin/admin_view_file');
+        
+        $this->layout->view('client_view_file');
     }
 }
 ?>
