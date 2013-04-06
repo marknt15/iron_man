@@ -12,7 +12,7 @@ class Login extends CI_Controller {
         //$this->load->model('Access_model', 'access');
 		$this->load->library('Layout');
 		
-		$this->load->helper('cookie');
+		$this->load->helper('form');
 	}
 	
 	function index()
@@ -24,11 +24,14 @@ class Login extends CI_Controller {
 		// this will make $data variables available to all views even with sub views - elements/partials
 		$this->load->vars($data);
         
-        echo SITE_NAME . " test here echo login controller";
+        //echo SITE_NAME . " test here echo login controller";
 
         //$this->layout->view('home/login');
 
+        $this->layout->view('login');
+        
         /*
+        // check if logged in and user type of external or internal
         if ($this->access->is_logged_in() == TRUE) {
 //            $this->test();
             $this->logged_in_func();

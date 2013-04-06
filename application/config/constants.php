@@ -50,22 +50,31 @@ define('REMAPS_DESCRIPTION', 'REMAPS is a client reporting, client relationship 
 define('FULL_COMPANY_NAME', 'Reload Media');
 define('CSS_MAIN', 'css/main.css');
 
+//define('CSS_FONT_MUSEO500', 'css/MyFontsWebfontsKit.css');
+
 //define('CSS_MENU', 'css/menu.css');
 
-define('CSS_ROUNDED_CORNER', 'css/rounded-corner.css');
+//define('CSS_ROUNDED_CORNER', 'css/rounded-corner.css');
 //define('CSS_ROUNDED_CORNER', 'css/rounded-corner2.css');
 //define('CSS_ROUNDED_CORNER', 'css/rounded-corner3.css');
 
-define('CSS_NIVO_DEFAULT_THEME', 'css/nivo/themes/default/default.css');
-define('CSS_NIVO', 'css/nivo/nivo-slider.css');
+//define('CSS_NIVO_DEFAULT_THEME', 'css/nivo/themes/default/default.css');
+//define('CSS_NIVO', 'css/nivo/nivo-slider.css');
 
 //define('CSS_JQUERY_UI_ALL', 'css/jquery_ui/themes/cupertino/jquery.ui.all.css');
 
+define('JS_JQUERY_1_9_1', 'js/jquery-1.9.1.min.js');
 //define('JS_JQUERY_1_6_1', 'js/jquery-1.6.1.min.js');
 //define('JS_JQUERY_1_4_2', 'js/jquery-1.4.2.min.js');
 
 //define('JS_NIVO', 'js/nivo/jquery.nivo.slider.pack.js');
-define('JS_CURVY', 'js/jquery_curvy/jquery.curvycorners.packed.js');
+//define('JS_CURVY', 'js/jquery_curvy/jquery.curvycorners.packed.js');
+
+
+// Cufon fonts
+define('JS_CUFON_YUI', 'js/cufon-yui.js');
+define('JS_CUFON_MUSEO500', 'js/cufon_fonts/Museo_500.font.js');
+define('JS_CUFON_GOTHAM500', 'js/cufon_fonts/Gotham_500.font.js');
 
 //define('JS_JQUERY_UI_CORE', 'js/jquery_ui/ui/jquery.ui.core.js');
 
